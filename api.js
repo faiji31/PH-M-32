@@ -9,20 +9,19 @@
       }
    const displayPost=(posts)=>{
     // 1.Get The container
-    const postContainer = document.getElementById('post-container1');
+    const postContainer = document.getElementById('post-container');
     postContainer.innerHTML =" ";
     posts.forEach(post=>{
       
       const div1 = document.createElement('div');
-      div1.innerHTML=`<div id="post-container1">
-    <div class="post-card">
-        <h1>This is Post Title</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error dolorum mollitia repellat aliquam nemo harum alias id, sit magnam ab iure maxime sed inventore corrupti nulla quia, earum natus.
+      div1.innerHTML=`
+
+ <div class="post-card">
+        <h1>${post.title}</h1>
+        <p>${post.body}
         </p>
 
     </div>
-</div>
-
 
 
       `;
