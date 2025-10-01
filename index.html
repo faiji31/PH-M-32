@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #post-ontainer{
+            max-width: 1160px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+        }
+        .post-card{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: ;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore API</title>
@@ -13,8 +28,14 @@
     <button onclick="loadPost()">Load Post</button>
 
 
+<div id="post-container">
+    <div class="post-ard">
+        <h1>This is Post Title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error dolorum mollitia repellat aliquam nemo harum alias id, sit magnam ab iure maxime sed inventore corrupti nulla quia, earum natus.
+        </p>
 
-    <ul id="post-container"></ul>
+    </div>
+</div>
 
     <script src="json.js"></script>
     <script src="api.js"></script>
