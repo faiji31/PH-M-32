@@ -15,11 +15,21 @@ const loadData=()=>{
         .then(response=> response.json())
         .then(json=> displayPost(json))
       }
+      // 1.get the container
+
+      const postContainer = document.getElementById('post-container')
 
 
       const displayPost = (posts)=>{
         posts.forEach((post)=>{
-            console.log(post);
+            // console.log(post.id);
+            // 2. Create HTML Element
+            const li = document.createElement('li');
+            li.innerText = post.title
+
+            // 3.add li into container
+
+            postContainer.appendChild(li);
 
         })
       }
