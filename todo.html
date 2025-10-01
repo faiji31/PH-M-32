@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
 </head>
+<style>
+    #post-container{
+        max-width: 1160px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+    }
+    .post-card{
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px grey;
+
+    }
+    .post-card p{
+        text-align: justify;
+    }
+
+</style>
 <body>
     <button onclick="loadPost()">Load Todo</button>
 
-    <div id="post-container"></div>
+    <div id="post-container">
+        
+    </div>
 
     <script src="todo.js"></script>
 </body>
